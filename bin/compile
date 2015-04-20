@@ -162,8 +162,6 @@ fi
 rm -rf $cache_dir/ruby
 mkdir -p $cache_dir/ruby
 
-cp -r /app/.gem/ruby $build_dir/.gem
-
 # If app has a gems directory, cache it.
 if test -d $build_dir/.gem; then
   status "Caching ruby gems directory for future builds"
