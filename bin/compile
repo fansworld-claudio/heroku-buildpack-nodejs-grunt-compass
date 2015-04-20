@@ -159,7 +159,8 @@ else
 fi
 
 # workaround
-cp -r /app/vendor/ruby-1.9.2 $build_dir/vendor
+status "build dir!!!!"
+status $build_dir
 
 # cache ruby gems compass
 rm -rf $cache_dir/ruby
